@@ -1,0 +1,1001 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/styles.css" >
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Inbox - aswin.andro@techversantinfo.com</title>
+    <link rel="icon"  href="../assets/favicon.ico"/>
+  </head>
+  <body>
+    <!-- <script src="../scripts/Jquery3.4.1.min.js"></script>
+    <script src="../scripts/main.js"></script> -->
+    <!-- <script type="text/javascript" src="../scripts/script.js"></script> -->
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <span class="material-icons"> menu </span>
+        <img
+          src="../assets/gmail-logo-1-1.png"
+          alt=""
+        />
+      </div>
+      <div><pre>        </pre></div>
+      <div class="header__middle">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Search mail" />
+        <span class="material-icons"> arrow_drop_down </span>
+      </div>
+      <div><pre>                                </pre></div>
+      <div class="header__right">
+        <span class="material-icons"> apps </span>
+        <span class="material-icons"> notifications </span>
+        <span class="material-icons"> account_circle </span>
+        <span class="material-icons"> settings </span>
+      </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <div class="main__body">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <!-- <a class="btn" href="#"><div class="text"></div>Compose</div></a> -->
+        <button class="sidebar_comp" id="open-modal"></button>
+        <!-- <div class="sidebar_border"></div> -->
+        <!-- <input type="image" src="../assets/compose.png" class="sidebar__compose"/> -->
+        <!-- <button class="sidebar__compose"><span><pre>                    </pre> </span></button> -->
+        <div class="sidebar__space"> </div>
+        <div class="sidebarOption sidebarOption__active">
+          <span class="material-icons"> inbox </span>
+          <h3>Inbox</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> star </span>
+          <h3>Starred</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> access_time </span>
+          <h3>Snoozed</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> label_important </span>
+          <h3>Important</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> send </span>
+          <h3>Sent</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> note </span>
+          <h3>Drafts</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> expand_more </span>
+          <h3>More</h3>
+        </div>
+        <div class="sidebar_border"></div>
+        <div class="sidebar-meet">
+          <div class="meet">
+          </div>
+          <div class="sidebarOption"><h3>Meet</h3></div>
+          <div class="sidebarOption"><span class="material-icons"> videocam </span> <h3>New Meeting</h3></div>
+          <div class="sidebarOption"><span class="material-icons"> videocam </span> <h3>Join a Meeting</h3></div>
+      </div>
+      <div class="sidebar_border"></div>
+      <div class="sidebarOption__chat">
+         <div class="sidebarOption"><h3>Hangouts</h3></div>
+          <div class="sidebarOption"><span class="material-icons"> hdr_auto </span> <h3>Aswin </h3>
+         <span class="material-icons">
+          arrow_drop_down
+          </span>
+        
+      </div>
+      <div class="sidebar_border"></div>
+      </div>
+
+      <!-- <div class="sidebar-hangouts">
+  
+          <span class="user-info">
+              <span class="avatars">
+                  <p>A</p>
+              </span>
+  
+  
+          </span>
+          <span class="online"></span>
+          <span>
+              <span class="title">
+                  <a href="">Aswin</a>
+                  <span><i class="fas fa-caret-down"></i></span>
+              </span>
+              <span class="plus"><i class="fas fa-plus"></i></span>
+          </span>
+      </div>
+  
+      <div class="recent">
+          <span class="info"><a href="">No recent chats</a></span>
+          <span class="start"><a href="">Start a new one</a></span>
+      </div> -->
+
+        <!-- <div class="sidebar__footer">
+          <div class="sidebar__footerIcons">
+            <span class="material-icons"> person </span>
+            <span class="material-icons"> duo </span>
+            <span class="material-icons"> phone </span>
+          </div>
+        </div> -->
+
+        <span class="sidebar__hang"></span>
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Email List Starts -->
+      <div class="emailList">
+        <!-- Settings Starts -->
+        <div class="emailList__settings">
+          <div class="emailList__settingsLeft">
+            <input type="checkbox" />
+            <span class="material-icons"> arrow_drop_down </span>
+            <span class="material-icons"> refresh </span>
+            <span class="material-icons"> more_vert </span>
+          </div>
+          <div class="emailList__settingsRight">
+            <span class="emailList__pcount">1-20 of 40</span>
+            <span class="material-icons"> chevron_left </span>
+            <span class="material-icons"> chevron_right </span>
+            <!-- <span class="material-icons"> keyboard_hide </span> -->
+            
+          </div>
+        </div>
+        <!-- Settings Ends -->
+
+        <!-- Section Starts -->
+        <div class="emailList__sections">
+          <div class="section section__selected">
+            <span class="material-icons" onclick="showinbo()"> inbox </span>
+            <h4>Primary</h4> 
+          </div>
+
+          <div class="section">
+            <span class="material-icons" onclick="hideinbo(this)"> people </span>
+            <h4>Social</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons" onclick="hideinbo2(this)"> local_offer </span>
+            <h4>Promotions</h4>
+          </div>
+        </div>
+        <!-- Section Ends -->
+
+        <!-- Email List rows starts -->
+        <div class="emailList__list">
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Amazon.in</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Delivered : Package has been Delivered
+                <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">6pm</p>
+          </div>
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>          
+            <h3 class="emailRow__title">Youtube</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                You Got a New Subscriber
+                <span class="emailRow__description"> - on Your Channel Music Decodz : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">4pm</p>
+          </div>
+          <!-- Email Row Ends -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Amazon.in</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Delivered : Package has been Delivered
+                <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">12pm</p>
+          </div>
+           <!-- Email Row Starts -->
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Cymatics</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Check my Personally Crafted Sounds for you
+                <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">8am</p>
+           </div>
+           
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Amazon.in</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Delivered : Package has been Delivered
+                <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">18 June</p>
+          </div>
+           <!-- Email Row Starts -->
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Soundcloud</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Subscription : Subscriber Alert :
+                <span class="emailRow__description"> - Your Subscription is going to end : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+            <p class="emailRow__time">18 June</p></div>
+        </div>
+         <!-- Email Row Starts -->
+         <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+            <span class="material-icons"> label_important </span>
+          </div>
+          <h3 class="emailRow__title">Cymatics</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Check my Personally Crafted Sounds for you
+              <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+            </h4>
+            <span class="emailRow__action">
+              <span class="material-icons">
+                archive
+                </span>
+              <span class="material-icons">
+                  delete
+                 </span>
+                 <span class="material-icons">
+                  mail
+                  </span>
+              <span class="material-icons">
+                watch_later
+                </span>
+            </span>
+          </div>
+
+          <p class="emailRow__time">18 June</p>
+         </div>
+         <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+            <span class="material-icons"> label_important </span>
+          </div>
+          <h3 class="emailRow__title">Amazon.in</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Delivered : Package has been Delivered
+              <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+            </h4>
+            <span class="emailRow__action">
+              <span class="material-icons">
+                archive
+                </span>
+              <span class="material-icons">
+                  delete
+                 </span>
+                 <span class="material-icons">
+                  mail
+                  </span>
+              <span class="material-icons">
+                watch_later
+                </span>
+            </span>
+          </div>
+
+          <p class="emailRow__time">17 June</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+           <input type="checkbox" name="" id="" />
+           <span class="material-icons"> star_border </span>
+           <span class="material-icons"> label_important </span>
+           </div>
+           <h3 class="emailRow__title">Cymatics</h3>
+ 
+          <div class="emailRow__message">
+           <h4>
+             Check my Personally Crafted Sounds for you
+             <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+           </h4>
+           <span class="emailRow__action">
+             <span class="material-icons">
+               archive
+               </span>
+             <span class="material-icons">
+                 delete
+                </span>
+                <span class="material-icons">
+                 mail
+                 </span>
+             <span class="material-icons">
+               watch_later
+               </span>
+           </span>
+          </div>
+ 
+          <p class="emailRow__time">17 June</p>  
+        </div>      
+         <!-- Email Row Starts -->
+         <div class="emailRow">
+          <div class="emailRow__options">
+           <input type="checkbox" name="" id="" />
+           <span class="material-icons"> star_border </span>
+           <span class="material-icons"> label_important </span>
+           </div>
+           <h3 class="emailRow__title">Cymatics</h3>
+ 
+          <div class="emailRow__message">
+           <h4>
+             Check my Personally Crafted Sounds for you
+             <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+           </h4>
+           <span class="emailRow__action">
+             <span class="material-icons">
+               archive
+               </span>
+             <span class="material-icons">
+                 delete
+                </span>
+                <span class="material-icons">
+                 mail
+                 </span>
+             <span class="material-icons">
+               watch_later
+               </span>
+           </span>
+          </div>
+ 
+          <p class="emailRow__time">17 June</p>  
+        </div>          
+         <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+            <span class="material-icons"> label_important </span>
+          </div>
+          <h3 class="emailRow__title">Soundcloud</h3>
+
+          <div class="emailRow__message">
+            <h4>
+              Subscription : Subscriber Alert :
+              <span class="emailRow__description"> - Your Subscription is going to end : Click to view Summary </span>
+            </h4>
+            <span class="emailRow__action">
+              <span class="material-icons">
+                archive
+                </span>
+              <span class="material-icons">
+                  delete
+                 </span>
+                 <span class="material-icons">
+                  mail
+                  </span>
+              <span class="material-icons">
+                watch_later
+                </span>
+            </span>
+          </div>
+          <p class="emailRow__time">17 June</p></div>
+          <div class="emailRow">
+            <div class="emailRow__options">
+             <input type="checkbox" name="" id="" />
+             <span class="material-icons"> star_border </span>
+             <span class="material-icons"> label_important </span>
+             </div>
+             <h3 class="emailRow__title">Cymatics</h3>
+   
+            <div class="emailRow__message">
+             <h4>
+               Check my Personally Crafted Sounds for you
+               <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+             </h4>
+             <span class="emailRow__action">
+               <span class="material-icons">
+                 archive
+                 </span>
+               <span class="material-icons">
+                   delete
+                  </span>
+                  <span class="material-icons">
+                   mail
+                   </span>
+               <span class="material-icons">
+                 watch_later
+                 </span>
+             </span>
+            </div>
+   
+            <p class="emailRow__time">16 June</p>  
+          </div>  
+          <div class="emailRow">
+            <div class="emailRow__options">
+             <input type="checkbox" name="" id="" />
+             <span class="material-icons"> star_border </span>
+             <span class="material-icons"> label_important </span>
+             </div>
+             <h3 class="emailRow__title">Cymatics</h3>
+   
+            <div class="emailRow__message">
+             <h4>
+               Check my Personally Crafted Sounds for you
+               <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+             </h4>
+             <span class="emailRow__action">
+               <span class="material-icons">
+                 archive
+                 </span>
+               <span class="material-icons">
+                   delete
+                  </span>
+                  <span class="material-icons">
+                   mail
+                   </span>
+               <span class="material-icons">
+                 watch_later
+                 </span>
+             </span>
+            </div>
+   
+            <p class="emailRow__time">16 June</p>  
+          </div>          
+          <div class="emailRow">
+            <div class="emailRow__options">
+             <input type="checkbox" name="" id="" />
+             <span class="material-icons"> star_border </span>
+             <span class="material-icons"> label_important </span>
+             </div>
+             <h3 class="emailRow__title">Cymatics</h3>
+   
+            <div class="emailRow__message">
+             <h4>
+               Check my Personally Crafted Sounds for you
+               <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+             </h4>
+             <span class="emailRow__action">
+               <span class="material-icons">
+                 archive
+                 </span>
+               <span class="material-icons">
+                   delete
+                  </span>
+                  <span class="material-icons">
+                   mail
+                   </span>
+               <span class="material-icons">
+                 watch_later
+                 </span>
+             </span>
+            </div>
+   
+            <p class="emailRow__time">16 June</p>  
+          </div>      
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Cymatics</h3>
+  
+            <div class="emailRow__message">
+              <h4>
+                Check my Personally Crafted Sounds for you
+                <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+  
+            <p class="emailRow__time">15 June</p>
+           </div>
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Cymatics</h3>
+  
+            <div class="emailRow__message">
+              <h4>
+                Check my Personally Crafted Sounds for you
+                <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+  
+            <p class="emailRow__time">15 June</p>
+           </div>
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Amazon.in</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Delivered : Package has been Delivered
+                <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">14 June</p>
+          </div>
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailRow__title">Amazon.in</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Delivered : Package has been Delivered
+                <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+              </h4>
+              <span class="emailRow__action">
+                <span class="material-icons">
+                  archive
+                  </span>
+                <span class="material-icons">
+                    delete
+                   </span>
+                   <span class="material-icons">
+                    mail
+                    </span>
+                <span class="material-icons">
+                  watch_later
+                  </span>
+              </span>
+            </div>
+
+            <p class="emailRow__time">14 June</p>
+          </div>
+      </div>
+       
+        <!-- Email List rows Ends -->
+      </div>
+      <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+          <span class="material-icons"> label_important </span>
+        </div>
+        <h3 class="emailRow__title">Cymatics</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Check my Personally Crafted Sounds for you
+            <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+          </h4>
+          <span class="emailRow__action">
+            <span class="material-icons">
+              archive
+              </span>
+            <span class="material-icons">
+                delete
+               </span>
+               <span class="material-icons">
+                mail
+                </span>
+            <span class="material-icons">
+              watch_later
+              </span>
+          </span>
+        </div>
+        <p class="emailRow__time">12pm</p>
+       </div>
+       <div class="emailRow">
+        <div class="emailRow__options">
+         <input type="checkbox" name="" id="" />
+         <span class="material-icons"> star_border </span>
+         <span class="material-icons"> label_important </span>
+         </div>
+         <h3 class="emailRow__title">Cymatics</h3>
+
+        <div class="emailRow__message">
+         <h4>
+           Check my Personally Crafted Sounds for you
+           <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+         </h4>
+         <span class="emailRow__action">
+           <span class="material-icons">
+             archive
+             </span>
+           <span class="material-icons">
+               delete
+              </span>
+              <span class="material-icons">
+               mail
+               </span>
+           <span class="material-icons">
+             watch_later
+             </span>
+         </span>
+        </div>
+
+        <p class="emailRow__time">12pm</p>  
+      </div>      
+       <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+          <span class="material-icons"> label_important </span>
+        </div>
+        <h3 class="emailRow__title">Amazon.in</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Delivered : Package has been Delivered
+            <span class="emailRow__description"> - Rate our services : Click to view Summary </span>
+          </h4>
+          <span class="emailRow__action">
+            <span class="material-icons">
+              archive
+              </span>
+            <span class="material-icons">
+                delete
+               </span>
+               <span class="material-icons">
+                mail
+                </span>
+            <span class="material-icons">
+              watch_later
+              </span>
+          </span>
+        </div>
+
+        <p class="emailRow__time">8pm</p>
+      </div>
+       <div class="emailRow">
+         <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+          <span class="material-icons"> label_important </span>
+          </div>
+          <h3 class="emailRow__title">Cymatics</h3>
+
+         <div class="emailRow__message">
+          <h4>
+            Check my Personally Crafted Sounds for you
+            <span class="emailRow__description"> - Login Now  : Click to view Summary </span>
+          </h4>
+          <span class="emailRow__action">
+            <span class="material-icons">
+              archive
+              </span>
+            <span class="material-icons">
+                delete
+               </span>
+               <span class="material-icons">
+                mail
+                </span>
+            <span class="material-icons">
+              watch_later
+              </span>
+          </span>
+         </div>
+
+         <p class="emailRow__time">12pm</p>  
+       </div>      
+       
+      <!-- Email List Ends -->
+      
+    </div>
+     
+    <!-- Main Body Ends -->
+  </div>
+       
+  <!-- <div class="calender">
+
+    <div class="cal1"><span style="display: inline-block;padding: 8px; border-radius: 50%;">
+        <i><a href="#"><img src="../assets/cal.png" width="25" style="margin:0px;padding:2px;position: relative;right: 3px;"></a></i></span>
+    </div>
+    <div class="cal1"><span style="display: inline-block;padding: 8px; border-radius: 50%;">
+        <i><a href="#"><img src="../assets/keep.png" width="25" style="margin:0px;padding:2px;position: relative;right: 3px;"></a></i></span>
+   </div>
+   <div class="cal1"><span style="display: inline-block;padding: 8px; border-radius: 50%;">
+       <i><a href="#"><img src="../assets/task.png" width="28" style="margin:0px;padding:2px;position: relative;right: 3px;"></a></i></span>
+   </div>
+   <div class="cal1"><span style="display: inline-block;padding: 8px; border-radius: 50%;">
+       <i><a href="#"><img src="../assets/account.png" width="20" style="margin:0px;padding:2px;position: relative;right: 2.5px;border-radius:20px;"></a></i></span>
+   </div>
+   <div class="cal1"><span style="display: inline-block;padding: 8px; border-radius: 50%;">
+        <a href="#"><i class="material-icons" style="padding:2px; margin: 0;">add</i></a></span>
+   </div>
+  </div>   -->
+  </body>
+  <div>
+     <footer class="footer">
+      <div class="links">
+        <div class="link-1">
+          <div class="footbord">
+          </div>
+          <span>29 of 30 GB used
+            <span class="material-icons">
+              open_in_new
+              </span>
+          </span>
+        </div>
+        <div class="link-2">
+          <div>Programme Policies </div>
+          <div>Powered by Google </div>
+        </div>
+        <div class="link-3">
+          <div>Last account activity 3 hours ago</div>
+          <div>Details</div>
+        </div>
+       </div>
+      </footer>
+  </div>
+  <div class="modal" id="modal">
+    <div class="header-modal">
+        <p>New Message</p>
+        <span class="top-right-header">
+            <span id="close"> <i class="fas fa-minus" id="close-minus"></i></span>
+            <span> <i class="fas fa-expand-alt"></i></span>
+            <span id="close-modal"><i class="fas fa-times"></i></span>
+        </span>
+    </div>
+          <div class="to-modal">
+            <p class="CcBcc">Cc Bcc</p>
+            <input type="email" name="" placeholder="To"  class="input-email">
+
+            </div>
+          <div class="to-subject">
+              <input type="text" name="" placeholder="Subject" class="input-subject">
+          </div>
+          <div class="text-area-modal">
+              <textarea name="" id="textarea"></textarea>
+          </div>
+          <div class="attach-modal">
+              <span class="left-attach">
+                <button class="btn-send-attach">
+                    <p>Send</p><i class="fas fa-caret-down"></i>
+                </button>
+            </span>
+            <span class="center-attach-modal">
+              <span class="material-icons">
+                text_rotation_none
+                </span>
+                <span class="material-icons">
+                  attach_file
+                  </span>
+                  <span class="material-icons">
+                    insert_link
+                    </span>
+                    <span class="material-icons">
+                      tag_faces
+                      </span>
+                      <span class="material-icons">
+                        add_to_drive
+                        </span>
+                        <span class="material-icons">
+                          insert_photo
+                          </span>
+                          <span class="material-icons">
+                            lock
+                            </span>
+            </span>
+            <span class="right-attach-modal">
+              <span>
+              <span class="material-icons">
+                more_vert
+                </span>
+                <span class="material-icons">
+                  delete
+                  </span>
+            </span></span>
+          
+        </div>
+  </div>
+  <!-- <script>
+
+    document.getElementById("open-modal").onclick = function fun()
+     {
+      alert("hello");
+      //validation code to see State field is mandatory.  
+     }   
+ 
+     function f1()
+     {
+        alert("f1 called");
+        //form validation that recalls the page showing with supplied inputs.    
+     }
+ 
+   </script> -->
+   <script src="../scripts/Jquery3.4.1.min.js"></script>
+   <script src="../scripts/script.js"></script>
+</html>
